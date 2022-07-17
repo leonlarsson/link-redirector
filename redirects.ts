@@ -1,6 +1,6 @@
 export default {
-    "/1": "https://leonlarsson.com",
-    "/2": "https://logsorter.net",
-    "/3": "https://bfstats.leonlarsson.com",
-    "/whatever": "https://google.com"
+    "/home": "https://leonlarsson.com",
+    "/ls": "https://logsorter.net",
+    "/stats": "https://bfstats.leonlarsson.com",
+    "/trash": "https://api.onlyraccoons.com"
 };
