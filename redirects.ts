@@ -1,5 +1,7 @@
 export default {
     "/home": "https://leonlarsson.com",
+    "/projects": "https://leonlarsson.com/projects",
+    "/p": "https://leonlarsson.com/projects",
     "/gh": "https://github.com/leonlarsson",
     "/li": "https://www.linkedin.com/in/leonlarsson",
     "/tw": "https://twitter.com/MozzyFX",
