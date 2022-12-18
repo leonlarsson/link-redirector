@@ -1,7 +1,7 @@
-import redirects from "./redirects";
-const paths = Object.entries(redirects);
+import config from "./config";
+const paths = Object.entries(config.redirects);
 
-export default (requestPath: string) => {
+export default (requestPath: string): Response => {
 
     const html = `
     <!DOCTYPE html>
@@ -9,20 +9,18 @@ export default (requestPath: string) => {
 
 <head>
 
-    <title>Leon Links</title>
-    <meta name="title" content="Leon Links">
-    <meta name="description" content="Links and things.">
+    <title>${config.title ?? "Links"}</title>
+    <meta name="title" content="${config.title ?? "Links"}">
+    <meta name="description" content="${config.description ?? "List of links"}">
     <meta name="theme-color" content="#7289da">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://x.leon.ms/">
-    <meta property="og:title" content="Leon Links">
-    <meta property="og:description" content="Links and things.">
+    <meta property="og:title" content="${config.title ?? "Links"}">
+    <meta property="og:description" content="${config.description ?? "List of links"}">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://x.leon.ms/">
-    <meta property="twitter:title" content="Leon Links">
-    <meta property="twitter:description" content="Links and things.">
+    <meta property="twitter:title" content="${config.title ?? "Links"}">
+    <meta property="twitter:description" content="${config.description ?? "List of links"}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -33,8 +31,9 @@ export default (requestPath: string) => {
 
 <body>
     <div class="container text-center">
-        <h1>Links</h1>
-        ${requestPath !== "/" ? `<h6>No redirect found for <code>${requestPath}</code><h6>` : ""}
+        <h1>${config.title ?? "Links"}</h1>
+        ${config.description ? `<h4>${config.description}</h4>` : ""}
+        ${requestPath !== "/" ? `<h6 class="text-danger">No redirect found for <code>${requestPath}</code><h6>` : ""}
         <hr>
         <div class="d-grid gap-2">
         <!-- Add d-grid class to <a> for alternative look -->
