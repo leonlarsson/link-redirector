@@ -37,7 +37,7 @@ export default (requestPath: string): Response => {
         <hr>
         <div class="d-grid gap-2">
         <!-- Add d-grid class to <a> for alternative look -->
-        ${paths.filter(x => x[1].visibleInHome).map(x => (`<a href="${x[1].url}" target="_blank" class="btn btn-lg btn-outline-dark">${x[1].icon ? `<i class="${x[1].icon}"></i> ` : ""}${x[1].name}</a>`)).join("\n")}
+        ${paths.filter(x => x[1].showInHome).map(x => (`<a href="${x[1].url}" target="_blank" class="btn btn-lg btn-outline-dark">${x[1].icon ? `<i class="${x[1].icon}"></i> ` : ""}${x[1].name}</a>`)).join("\n")}
         </div>
     </div>
 </body>
