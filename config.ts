@@ -1,78 +1,50 @@
+type Link = {
+    url: string;
+    showInHome?: boolean;
+    icon?: string;
+    name?: string;
+};
+
 export default {
     title: "Leon's Links",
     description: "A collection of useful links where you can connect with me.",
     redirects: {
         "/home": {
             url: "https://leonlarsson.com",
-            name: "Home",
+            showInHome: true,
             icon: "fa-solid fa-house-user",
-            showInHome: true
+            name: "Home",
         },
         "/projects": {
             url: "https://leonlarsson.com/projects",
-            name: "Projects",
+            showInHome: true,
             icon: "fa-solid fa-hammer",
-            showInHome: true
-        },
-        "/p": {
-            url: "https://leonlarsson.com/projects",
-            name: "Projects",
-            icon: "fa-solid fa-hammer",
-            showInHome: false
+            name: "Projects"
         },
         "/gh": {
             url: "https://github.com/leonlarsson",
-            name: "GitHub",
+            showInHome: true,
             icon: "fa-brands fa-github",
-            showInHome: true
+            name: "GitHub"
         },
         "/li": {
             url: "https://www.linkedin.com/in/leonlarsson",
-            name: "LinkedIn",
+            showInHome: true,
             icon: "fa-brands fa-linkedin",
-            showInHome: true
+            name: "LinkedIn"
         },
         "/tw": {
             url: "https://twitter.com/MozzyFX",
-            name: "Twitter",
+            showInHome: true,
             icon: "fa-brands fa-twitter",
-            showInHome: true
+            name: "Twitter"
         },
-        "/ls": {
-            url: "https://logsorter.net",
-            name: "Log Sorter",
-            icon: null,
-            showInHome: false
-        },
-        "/morse": {
-            url: "https://bf1morse.leonlarsson.com",
-            name: "Mozzy's Morse Solver",
-            icon: null,
-            showInHome: false
-        },
-        "/stats": {
-            url: "https://bfstats.leonlarsson.com",
-            name: "Battlefield Stats",
-            icon: null,
-            showInHome: false
-        },
-        "/trash": {
-            url: "https://api.onlyraccoons.com",
-            name: "TrasHTTPandas",
-            icon: null,
-            showInHome: false
-        },
-        "/joy": {
-            url: "https://joy.leonlarsson.com",
-            name: "Joy",
-            icon: null,
-            showInHome: false
-        },
-        "/bfvmenu": {
-            url: "https://bfvmenu.leonlarsson.com/",
-            name: "BFV Menu",
-            icon: null,
-            showInHome: false
-        }
-    }
+        "/p": { url: "https://leonlarsson.com/projects" },
+        "/ls": { url: "https://logsorter.net" },
+        "/morse": { url: "https://bf1morse.leonlarsson.com" },
+        "/stats": { url: "https://bfstats.leonlarsson.com" },
+        "/trash": { url: "https://api.onlyraccoons.com" },
+        "/joy": { url: "https://joy.leonlarsson.com" },
+        "/bfvmenu": { url: "https://bfvmenu.leonlarsson.com/" }
+    } as Record<string, Link>
 };

@@ -46,5 +46,4 @@ export default (requestPath: string): Response => {
 `;
 
     return new Response(html, { headers: { "Content-Type": "text/html" } });
-
 }
