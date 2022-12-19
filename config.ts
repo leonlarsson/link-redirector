@@ -1,3 +1,9 @@
+type Config = {
+    title?: string;
+    description?: string;
+    redirects: Record<string, Link>
+};
+
 type Link = {
     url: string;
     showInHome?: boolean;
@@ -46,5 +52,5 @@ export default {
         "/trash": { url: "https://api.onlyraccoons.com" },
         "/joy": { url: "https://joy.leonlarsson.com" },
         "/bfvmenu": { url: "https://bfvmenu.leonlarsson.com/" }
-    } as Record<string, Link>
-};
+    }
+} as Config;
