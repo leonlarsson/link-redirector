@@ -41,30 +41,30 @@ export default {
             name: "Projects"
         },
         {
-            paths: ["/gh"],
+            paths: ["/github", "/gh"],
             url: "https://github.com/leonlarsson",
             showInHome: true,
             icon: "fa-brands fa-github",
             name: "GitHub"
         },
         {
-            paths: ["/li"],
+            paths: ["/linkedin", "/li"],
             url: "https://www.linkedin.com/in/leonlarsson",
             showInHome: true,
             icon: "fa-brands fa-linkedin",
             name: "LinkedIn"
         },
         {
-            paths: ["/tw"],
+            paths: ["/twitter", "/tw"],
             url: "https://twitter.com/MozzyFX",
             showInHome: true,
             icon: "fa-brands fa-twitter",
             name: "Twitter"
         },
-        { paths: ["/ls"], url: "https://logsorter.net" },
+        { paths: ["/logsorter", "/ls"], url: "https://logsorter.net" },
         { paths: ["/morse"], url: "https://bf1morse.leonlarsson.com" },
         { paths: ["/stats"], url: "https://bfstats.leonlarsson.com" },
-        { paths: ["/trash"], url: "https://api.onlyraccoons.com" },
+        { paths: ["/http", "/trash"], url: "https://api.onlyraccoons.com" },
         { paths: ["/joy"], url: "https://joy.leonlarsson.com" },
         { paths: ["/bfvmenu"], url: "https://bfvmenu.leonlarsson.com/" }
     ]
