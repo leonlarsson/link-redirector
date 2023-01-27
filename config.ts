@@ -1,4 +1,8 @@
 type Config = {
+    /** Whether or not to use the home function at all. */
+    useHome: boolean;
+    /** The URL to redirect to if home is not enabled. */
+    homeRedirectUrl: string;
     /** The title of the page. Shown in meta and on page. */
     title?: string;
     /** The description of the page. Shown in meta and on page. Omitting will remove the description on the page. */
@@ -23,6 +27,8 @@ type Link = {
 // If showInHome is true, you should specify at least icon OR home. Include both to display both name and icon. Omitting both will display an empty button, which does not look good...
 
 export default {
+    useHome: true,
+    homeRedirectUrl: "https://leonlarsson.com",
     title: "Leon's Links",
     description: "A collection of useful links where you can connect with me.",
     redirects: [
