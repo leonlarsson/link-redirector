@@ -69,7 +69,7 @@ export default {
         },
         { paths: ["/logsorter", "/ls"], url: "https://logsorter.net" },
         { paths: ["/morse"], url: "https://bf1morse.leonlarsson.com" },
-        { paths: ["/stats"], url: "https://bfstats.leonlarsson.com" },
+        { paths: ["/stats"], url: "https://battlefieldstats.com/" },
         { paths: ["/http", "/trash"], url: "https://api.onlyraccoons.com" },
         { paths: ["/joy"], url: "https://joy.leonlarsson.com" },
         { paths: ["/bfvmenu"], url: "https://bfvmenu.leonlarsson.com/" }
